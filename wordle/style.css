@@ -1,0 +1,334 @@
+:root{
+  --dark: #000;
+  --light: #fff;
+  --purple: #7e7fc2;;
+}
+.darkmode{
+  --dark: rgb(34, 34, 34);
+  --light: #fff;
+}
+
+
+hr{
+border-color: var(--purple);
+}
+
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color :  white;
+  color: black;
+}
+
+body.dark {
+  background-color: rgb(34, 34, 34);
+  color: white;
+}
+.header {
+  display: flex;
+  color: #8765e6;
+  justify-content: space-between;
+  align-items: center;
+}
+ 
+
+.center {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  margin-left: 115px;
+}
+
+.topic{
+  font-size: 2em;
+  font-weight: bold;
+  justify-content: center;
+  display:flex;
+  flex-wrap: wrap;
+  align-items: center !important;
+  text-align: center !important;
+}
+
+.options{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: right;
+}
+
+.option{ /* need to grt it in the middle *//* teh bottons dont turn dark moode*/
+  border: none;
+  border-radius: 50%;
+  font-size: 25px;
+  font-weight: bold;
+  margin: 0 10px;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  justify-content: right;
+}  
+
+
+line{
+  width: 500px;
+  border-top: 1px solid rgb(30, 20, 168);
+}
+
+/*TABLE */
+
+#table{
+
+  padding-top: 20px;
+  width: 300px;
+  /*height: 300px;*/
+  margin-top: 3px;
+  margin : 0 auto;
+
+  display : flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  grid-row: 1;
+  grid-column: 2;
+  }
+
+
+.tiles{
+  border: 1px solid var(--purple);
+  width: 60px;
+  height: 60px;
+  margin: 1.2px; /* distance bitween tiles*/
+
+  color: var(--purple);
+  font-size: 35px;
+  font-weight: bold;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }  
+
+.tiles.dark {
+    border: 1px solid var(--light);
+    color: var(--light);
+    border: 1px solid white;
+    color: white;
+  }
+  
+.present{
+  background-color: rgb(248, 230, 149);
+  color: black;
+  border-color: gray;
+
+  }
+.correct{
+  background-color: rgb(154, 245, 169);
+  color: black;
+  border-color: grey;
+  }
+.not_present{
+  background-color: grey;
+  color: white;
+  border-color: grey;
+  }
+
+  .footer {
+    position: fixed;
+    text-align: center;
+    color: rgb(107, 98, 98);
+    border-top: 3px solid rgb(160, 171, 221); 
+    left: 0;
+    bottom: 0; 
+    height: 50px; 
+    width: 100%;
+  }
+  
+  
+
+/****DARK MODE ****/
+#dark-mode {
+  background-color: rgb(34, 34, 34);
+  color: white;
+}
+
+div.options button.dark {
+  background-color: rgb(34, 34, 34);
+  color: white;
+  font-size: 16px;
+  margin-right: 10px; /* example: add some space between the buttons */
+}
+#instructions.dark {
+  background-color: rgb(34, 34, 34);
+  color: white;
+  font-size: 16px;
+  margin-right: 10px; /* example: add some space between the buttons */
+}
+
+div.options button.light {
+  background-color: white;
+  color: black;
+  font-size: 16px;
+  margin-right: 10px; /* example: add some space between the buttons */
+}
+
+div.options button {
+  background-color: white;
+  color: black;
+  font-size: 16px;
+  margin-right: 10px; /* example: add some space between the buttons */
+}
+
+.darkMode:hover{
+  background-color: var(--purplelight);
+}
+#instructions:hover{
+  background-color: var(--purplelight);
+}
+.hint:hover{
+  background-color: var(--purplelight);
+}
+
+#instructions.dark {
+  background-color: rgb(34, 34, 34);
+  color: white;
+  
+}
+
+/**HINT**/
+
+
+.bottom{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(169, 185, 255);
+
+  height: 43px;
+
+  }
+#hintText{
+  font-size: 17px;
+
+  color: black;
+  text-align: center;
+  padding: 10px;
+  }
+
+ /**INSTRUCTIONS**/
+instText{
+  font-size: 17px;
+  color: black;
+  text-align: left;
+  padding: 10px;
+  }
+
+#instText {
+    font-size: 17px;
+    color: black;
+    text-align: left;
+    padding: 10px;
+  }
+  
+#instTB-container {
+  position: relative;
+  left: 100%;
+  transform: translateX(-60px);
+  
+  }
+  
+
+ #instTB{
+  display: none;
+  position: absolute;
+  top: 70px;
+  right: 50px;
+  padding: 20px;
+  background-color: rgb(169, 185, 255);
+  border: 4px solid rgba(0, 0, 0, 0.144);
+  }
+  #instTB.show {
+    display: block;
+  }
+  li {margin: 9px;}
+
+  .container {
+    display: grid;
+    grid-template-rows: auto;
+    justify-content: center;
+    align-items: center;
+  }
+
+/**WINNER**/
+win{
+  display: flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(250, 191, 28);
+
+  height: 43px;
+}
+#looserPC{
+  display: none;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(252, 116, 116);
+
+  height: 43px;
+
+}
+#img{display: none;}
+
+#img2{display: none;}
+
+
+
+  /***BUTTONS***/
+
+#restart {
+  
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  margin-right: 42%;
+  margin-left: 42%;
+  padding: 10px;
+
+}
+
+button#start-over {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(74, 126, 74);
+  margin-top: 30px;
+  padding: 10px;
+
+
+  color: #fff;
+  font-size: 19px;
+}
+
+
+
+  #button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: bisque;
+    height: 43px;
+  }
+
+  #button button{
+    border: none;
+    border-radius: 50%;
+    font-size: 25px;
+    font-weight: bold;
+    margin: 0 10px;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    justify-content: right;
+  }
+
+  
+
